@@ -1,0 +1,14 @@
+.body{
+    background-image: url('../Assets//body.png');
+    background-color: rgb(238, 231, 231);
+    background-repeat: repeat;
+}
+.contaner{
+    width: 100%;
+    height:500px;
+    background-color: rgb(250, 250, 252);
+}
+.home-img{
+    width: 100%;
+    height:550px;
+}

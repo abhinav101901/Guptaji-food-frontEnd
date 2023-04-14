@@ -1,0 +1,15 @@
+.StatusOrder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.StatusOrder p{
+    
+    font-size: 15px;
+    font-weight: 600;
+}
+.RSPBprogressBar{
+    border: 1px solid black ;
+}

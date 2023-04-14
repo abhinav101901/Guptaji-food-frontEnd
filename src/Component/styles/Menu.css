@@ -1,0 +1,60 @@
+.funck {
+    width: 65%;
+    margin-left: 35%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fu-2 {
+    width: 400px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.input-group {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-control {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.cartImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cartImg img {
+    padding-top: 20px;
+    position: absolute;
+    height: 55px;
+    width: 60px;
+    z-index: 1;
+
+}
+
+.cartImg k1 {
+    width: 20px;
+    height: 20px;
+    color: rgb(253, 252, 252);
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.7;
+    margin: -10px 0 0 40px;
+    font-size: 20px;
+    text-align: center;
+}

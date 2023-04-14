@@ -1,0 +1,52 @@
+.login-page{
+    margin:5% 0 0 20%;
+    background-color: blanchedalmond;
+    width: 60vw;
+    height: 60vh;
+    border:0.5vh solid black;
+    border-radius: 5vh;   
+}
+.hading{
+    font-size: 5vb;
+    margin:2% 0 0 30% ;
+}
+.Cont-1{
+    display:flex
+    
+}
+.img-login{
+    width: 100%;
+    height: 99%;
+}
+
+.login-logo{
+    width: 40vw;
+    height: 50vh;
+    border-radius: 1vh;
+    background-color: blanchedalmond;
+}
+.LogIn{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 50vh;
+}
+.LogIn Input{
+    padding: 2.5vh;
+    margin: 2vh;
+    border-radius: 1vh;
+    font-size: 3vh;
+}
+
+.btn21{
+    padding: 2.5vh 0 2.5vh 35%;
+    margin: 2vh ;
+    color: black;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 1vh;
+    font-size: 3vh;
+    font-weight: 500;
+    text-decoration: none;
+}
