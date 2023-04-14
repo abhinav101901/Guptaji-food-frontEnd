@@ -14,7 +14,7 @@ class StepProgressBar extends React.Component {
         width="70"
         height="20px"
       >
-        <Step transitionDuration={"30000000000000000000"} transition="scale">
+        <Step transition="scale">
           {({ accomplished}) => (
             <div className="StatusOrder">
             <img

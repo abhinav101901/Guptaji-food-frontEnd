@@ -22,7 +22,7 @@ function LogIn() {
             localStorage.setItem("UserId", userId)
             localStorage.setItem("phone",phone)
             Navigate('/Otplogin')
-            window.location.reload();
+            window.location.reload(false);
         }).catch((err) => {
             alert(err.response.data.message + err.response.status + " Error")
         })

@@ -7,7 +7,7 @@ const Navbar = () => {
   const Navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("logIn"); 
-    console.log("login",localStorage.getItem("logIn"))
+    localStorage.removeItem("TotalItems")
     Navigate('/Home')
     window.location.reload();// remove token from local storage
     // perform any other necessary logout actions, such as redirecting to a login page

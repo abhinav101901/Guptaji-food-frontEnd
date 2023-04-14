@@ -33,6 +33,7 @@ function Cart() {
         })
             .then((res) => {
                 alert(`ADD Order Succesfully`)
+                localStorage.removeItem("TotalItems")
                 navigate(`/Order`)
             }).catch((err) => {
                 alert(err.response.data.message + err.response.status + " Error")
@@ -43,6 +44,7 @@ function Cart() {
     axios.post(`http://localhost:3000/deleteCart/${UserId}`)
             .then((res) => {
                 alert(`Check Out Succesfully`)
+                localStorage.removeItem("TotalItems")
                 window.location.reload();
             }).catch((err) => {
                 alert(err.response.data.message + err.response.status + " Error")

@@ -5,7 +5,6 @@ import StepProgressBar from "./StepProgressBar";
 import '../styles/Order.css'
 
 function Order() {
-  const [data, setData] = useState()
   const [items, setItems] = useState([])
   const [price, setPrice] = useState("")
   const [quantity, setQuantity] = useState("")
@@ -16,7 +15,6 @@ function Order() {
   useEffect(() => {
     axios.get(`http://localhost:3000/getOrder/${UserId}`)
       .then((res) => {
-        setData(res.data.data)
         setItems(res.data.data.items)
         setPrice(res.data.data.totalPrice)
         setQuantity(res.data.data.totalItems)
