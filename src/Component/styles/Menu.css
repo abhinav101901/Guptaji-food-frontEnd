@@ -58,6 +58,17 @@
     font-size: 20px;
     text-align: center;
 }
+
+.foodType img{
+    width: 30px;
+}
+.detail-2{
+    width: 150px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
 #slider {
     position: fixed;
     left: 0px;

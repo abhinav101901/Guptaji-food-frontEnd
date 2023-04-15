@@ -4,6 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
 import cartLogo from '../Assets/cartLogo.png'
 import axios from "axios"
+import green from '../Assets/veg.png'
+import red from '../Assets/red.png'
 import '../styles/Menu.css'
 
 function Menu() {
@@ -26,7 +28,7 @@ function Menu() {
 
 	const navigate = useNavigate();
 	const routeParams = useParams()
-	
+
 	useEffect(() => {
 		axios.get(`http://localhost:3000/getFood/${routeParams.id}`)
 			.then((res) => {
@@ -79,8 +81,8 @@ function Menu() {
 
 	const handleQuantity = (event) => {
 		setQuantity(Number(event.target.value));
-		document.getElementById(event.target.id).value=event.target.value
-	  };
+		document.getElementById(event.target.id).value = event.target.value
+	};
 
 	return (
 		<div className="Restorent">
@@ -103,34 +105,41 @@ function Menu() {
 
 			{searchData ? (
 				<div className="Contaner">
-					<h4>{query.type}</h4>
-					<div className='contaner-1' key={query._id} >
+					{query.map((item) => {
+						if (true) {
+							return <div className='contaner-1' key={item._id} >
 
-						<div className='box'><img src={query.imageManu} alt='imageManu' /></div>
-						<div className='detail'>
-							<div className='detail-1'>
-								<p>{query.name}</p>
-								<p>{query.price} ₹ </p>
-							</div>
+								<div className='box'><img src={item.imageManu} alt='imageManu' /></div>
+								<div className='detail'>
+									<div className='detail-1'>
+										<p>{item.name}</p>
+										<p>{item.price} ₹ </p>
+									</div>
 
-							<div class="input-group">
-								<select value="0" onChange={handleQuantity}>
-									<option value={0}>0</option>
-									<option value={1}>1</option>
-									<option value={2}>2</option>
-									<option value={3}>3</option>
-									<option value={4}>4</option>
-									<option value={5}>5</option>
-								</select>
-							</div>
+									<div class="input-group">
+										<select id={item._id} onChange={handleQuantity}>
+											<option value={0}>0</option>
+											<option value={1}>1</option>
+											<option value={2}>2</option>
+											<option value={3}>3</option>
+											<option value={4}>4</option>
+											<option value={5}>5</option>
+										</select>
+									</div>
 
-							<div className='detail-2'>
-								<button id={query._id} onClick={(e) => handleClick(query._id)}>
-									<Link>ADD</Link>
-								</button>
+									<div className='detail-2'>
+										<div className='foodType'>
+											{(item.foodType === "Veg") ? (<img src={green} alt="Veg" />) : (<img src={red} alt="Non-Veg" />)}
+										</div>
+										<button id={item._id} onClick={(e) => handleClick(item._id)}>
+											<Link>ADD</Link>
+										</button>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
+						}
+					}
+					)}
 				</div>
 			) : (<>
 				<div className="Contaner">
@@ -158,6 +167,9 @@ function Menu() {
 									</div>
 
 									<div className='detail-2'>
+										<div className='foodType'>
+											{(item.foodType === "Veg") ? (<img src={green} alt="Veg" />) : (<img src={red} alt="Non-Veg" />)}
+										</div>
 										<button id={item._id} onClick={(e) => handleClick(item._id)}>
 											<Link>ADD</Link>
 										</button>
@@ -194,6 +206,9 @@ function Menu() {
 									</div>
 
 									<div className='detail-2'>
+										<div className='foodType'>
+											{(item.foodType === "Veg") ? (<img src={green} alt="Veg" />) : (<img src={red} alt="Non-Veg" />)}
+										</div>
 										<button id={item._id} onClick={(e) => handleClick(item._id)}>
 											<Link>ADD</Link>
 										</button>
@@ -230,6 +245,9 @@ function Menu() {
 									</div>
 
 									<div className='detail-2'>
+										<div className='foodType'>
+											{(item.foodType === "Veg") ? (<img src={green} alt="Veg" />) : (<img src={red} alt="Non-Veg" />)}
+										</div>
 										<button id={item._id} onClick={(e) => handleClick(item._id)}>
 											<Link>ADD</Link>
 										</button>
@@ -266,6 +284,9 @@ function Menu() {
 									</div>
 
 									<div className='detail-2'>
+										<div className='foodType'>
+											{(item.foodType === "Veg") ? (<img src={green} alt="Veg" />) : (<img src={red} alt="Non-Veg" />)}
+										</div>
 										<button id={item._id} onClick={(e) => handleClick(item._id)}>
 											<Link>ADD</Link>
 										</button>

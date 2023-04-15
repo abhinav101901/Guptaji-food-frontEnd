@@ -17,7 +17,7 @@ function About() {
        <div className='subChild-2'>
         <d1>About Developer</d1>
         <d2>Hi, I am Abhinav Gupta</d2>
-        <d3>I done <a1>B.Tech</a1> from <a1>Pranveer Singh Institute of Technology, Kanpur</a1> at 2022. I belong to <a1>Kanpur,U.P.</a1> ,<br/> wher I have completed my schooling.</d3>
+        <d3>"After completing my schooling in Kanpur, Uttar Pradesh, I went on to obtain a B.Tech degree from Pranveer Singh Institute of Technology, also located in Kanpur. I am proud to have graduated from my hometown institute and look forward to utilizing my education and skills in my future endeavors".</d3>
         <a1>My Skills:</a1>
         <div className='Knowledge'>
             <div className='Knowledge-1'>

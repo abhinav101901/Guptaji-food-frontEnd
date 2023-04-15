@@ -69,21 +69,25 @@ function Restorent() {
 			{
 		searchData ? (
 			<div className="Contaner">
-				<div className='contaner-1' key={query._id} >
-					<div className='box'><img src={query.imageResto} alt='Resto' /></div>
-					<div className='detail'>
-						<div className='detail-1'>
-							<p>{query.name}</p>
-							<p>{query.phone}</p>
+				{query.map((item) => {
+					if (true) {
+						return <div className='contaner-1' key={item._id} >
+							<div className='box'><img src={item.imageResto} alt='Resto' /></div>
+							<div className='detail'>
+								<div className='detail-1'>
+									<p>{item.name}</p>
+									<p>{item.phone}</p>
+								</div>
+								<div className='detail-2'>
+									<button id={item._id} onClick={(e) => handleClick(item)}>
+										<Link>Menu</Link>
+									</button>
+								</div>
+							</div>
 						</div>
-						<div className='detail-2'>
-							<button id={query._id} onClick={(e) => handleClick(query)}>
-								<Link>Menu</Link>
-							</button>
-						</div>
-					</div>
-				</div>
-
+					}
+				}
+				)}
 			</div>
 		) : (
 			<div className="Contaner">
