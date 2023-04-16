@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/GuptaJi_food_resto_app/static/css/main.560d30ea.css",
+    "main.js": "/GuptaJi_food_resto_app/static/js/main.2d8f8eb8.js",
+    "static/js/787.22edae46.chunk.js": "/GuptaJi_food_resto_app/static/js/787.22edae46.chunk.js",
+    "static/media/body.png": "/GuptaJi_food_resto_app/static/media/body.e3644ad76bbc7c66cef2.png",
+    "static/media/login.png": "/GuptaJi_food_resto_app/static/media/login.236fcbe5d81ba6cceb5e.png",
+    "static/media/wel.jpg": "/GuptaJi_food_resto_app/static/media/wel.70759b8051f4d809a9e7.jpg",
+    "static/media/logo.png": "/GuptaJi_food_resto_app/static/media/logo.f32bbd74204c0bbae388.png",
+    "static/media/AWS.png": "/GuptaJi_food_resto_app/static/media/AWS.1d12dac553d9b80656ec.png",
+    "static/media/mern-4th.png": "/GuptaJi_food_resto_app/static/media/mern-4th.8a2f7f5728030e81952b.png",
+    "static/media/cartLogo.png": "/GuptaJi_food_resto_app/static/media/cartLogo.a5e22d97fd70f53a7b0b.png",
+    "static/media/Developer.png": "/GuptaJi_food_resto_app/static/media/Developer.8b527c23d65aee77e5a1.png",
+    "static/media/contact.avif": "/GuptaJi_food_resto_app/static/media/contact.35cacdbe3cabe71dbb26.avif",
+    "static/media/react-js.png": "/GuptaJi_food_resto_app/static/media/react-js.fd373eec9017cf21b26d.png",
+    "static/media/red.png": "/GuptaJi_food_resto_app/static/media/red.8fe11551d6961628dffd.png",
+    "static/media/CA.jpg": "/GuptaJi_food_resto_app/static/media/CA.6be6a5e10c5a06afe30c.jpg",
+    "static/media/veg.png": "/GuptaJi_food_resto_app/static/media/veg.598ac7280f6cd556772f.png",
+    "static/media/node-js.png": "/GuptaJi_food_resto_app/static/media/node-js.1fac080eeec0a547c743.png",
+    "static/media/green.png": "/GuptaJi_food_resto_app/static/media/green.ea63dc85d61ae0990c0d.png",
+    "static/media/MongoDB.png": "/GuptaJi_food_resto_app/static/media/MongoDB.b73f3b3a628a07997535.png",
+    "index.html": "/GuptaJi_food_resto_app/index.html",
+    "main.560d30ea.css.map": "/GuptaJi_food_resto_app/static/css/main.560d30ea.css.map",
+    "main.2d8f8eb8.js.map": "/GuptaJi_food_resto_app/static/js/main.2d8f8eb8.js.map",
+    "787.22edae46.chunk.js.map": "/GuptaJi_food_resto_app/static/js/787.22edae46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.560d30ea.css",
+    "static/js/main.2d8f8eb8.js"
+  ]
+}
