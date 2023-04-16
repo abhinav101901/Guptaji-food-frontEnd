@@ -1,62 +1,67 @@
-.Order{
-   
+.Order {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
-.Order-main{
+
+.Order-main {
     border: 1px solid rgb(204, 207, 209);
     background-color: rgb(204, 207, 209);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-	width: 70%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	/* padding: 40px calc((100% - (255px * 3)) / 2); */
-  }
-  
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding: 40px calc((100% - (255px * 3)) / 2); */
+}
+
 .Order-detailBox {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-	 height: auto;
-	 flex: 0 0 55%;
-	 margin: 1em 20px;
-	 border: 2px rgb(10, 10, 10) solid;
-     border-radius: 10px;
+    height: auto;
+    flex: 0 0 55%;
+    margin: 1em 20px;
+    border: 2px rgb(10, 10, 10) solid;
+    border-radius: 10px;
 }
-.Order-imgbox{
+
+.Order-imgbox {
     border: 2px rgb(10, 10, 10) solid;
     width: 70px;
     height: 50px;
 }
-.Order-imgbox img{
+
+.Order-imgbox img {
     width: 70px;
     height: 50px;
 }
-.OrderStatus{
+
+.OrderStatus {
     width: 70%;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.Orderbill{
+
+.Orderbill {
     width: 90%;
     height: 80px;
     border-top: 1px solid black;
     display: flex;
     flex-direction: column;
-    align-items:end;
+    align-items: flex-end;
     font-size: 20px;
     font-weight: 600;
 }
 
 
 @media screen and (max-width: 768px) {
-    .Order-main{
+    .Order-main {
         border: 1px solid rgb(204, 207, 209);
         background-color: rgb(204, 207, 209);
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -65,18 +70,18 @@
         flex-wrap: wrap;
         justify-content: center;
         /* padding: 40px calc((100% - (255px * 3)) / 2); */
-      }
-      
+    }
+
     .Order-detailBox {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         width: 95%;
-         height: auto;
-         flex: 0 0 55%;
-         padding: 5px;
-         border: 2px rgb(10, 10, 10) solid;
-         border-radius: 10px;
+        height: auto;
+        flex: 0 0 55%;
+        padding: 5px;
+        border: 2px rgb(10, 10, 10) solid;
+        border-radius: 10px;
     }
 }

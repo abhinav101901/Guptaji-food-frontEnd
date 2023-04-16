@@ -67,7 +67,7 @@ const App = () => {
         console.log(res);
         setUser(res.user);
         setLoading(false);
-        {localStorage.setItem("logIn",res.user)}
+        localStorage.setItem("logIn",res.user)
       })
       .catch((err) => {
         console.log(err);

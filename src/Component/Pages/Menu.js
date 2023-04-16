@@ -30,7 +30,7 @@ function Menu() {
 	const routeParams = useParams()
 
 	useEffect(() => {
-		axios.get(`http://guptaji-food-backend-production.up.railway.app/getFood/${routeParams.id}`)
+		axios.get(`https://guptaji-food-backend-production.up.railway.app/getFood/${routeParams.id}`)
 			.then((res) => {
 				setData(res.data.data)
 				console.log(res.data.data)
@@ -44,7 +44,7 @@ function Menu() {
 	}
 
 	function handleClick(foodId) {
-		axios.post(`http://guptaji-food-backend-production.up.railway.app/addInCart/${UserId}`, {
+		axios.post(`https://guptaji-food-backend-production.up.railway.app/addInCart/${UserId}`, {
 			foodId, quantity
 		})
 			.then((res) => {
@@ -64,7 +64,7 @@ function Menu() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log(name)
-		axios.get(`http://guptaji-food-backend-production.up.railway.app/getfoodByname/${name}`)
+		axios.get(`https://guptaji-food-backend-production.up.railway.app/getfoodByname/${name}`)
 			.then((res) => {
 				setQuery(res.data.data)
 				setSearchData(true)
@@ -86,7 +86,7 @@ function Menu() {
 
 	return (
 		<div className="Restorent">
-			{added ? (<></>) : (<div id="slider" class="slide-in">add successfully</div>)}
+			{added ? (<></>) : (<div id="slider" className="slide-in">add successfully</div>)}
 			<div className='foook'>
 				<h1>Food Menu</h1>
 				<div className='fu-2'>
@@ -96,7 +96,7 @@ function Menu() {
 					</form>
 					<div className='cartImg' onClick={(e) => goTOCart()}>
 						<img src={cartLogo} alt="brand" />
-						<k1>{localStorage.getItem("TotalItems")}</k1>
+						<div className='k1'>{localStorage.getItem("TotalItems")}</div>
 					</div>
 					<div>
 					</div>
@@ -106,7 +106,6 @@ function Menu() {
 			{searchData ? (
 				<div className="Contaner">
 					{query.map((item) => {
-						if (true) {
 							return <div className='contaner-1' key={item._id} >
 
 								<div className='box'><img src={item.imageManu} alt='imageManu' /></div>
@@ -116,7 +115,7 @@ function Menu() {
 										<p>{item.price} ₹ </p>
 									</div>
 
-									<div class="input-group">
+									<div className="input-group">
 										<select id={item._id} onChange={handleQuantity}>
 											<option value={0}>0</option>
 											<option value={1}>1</option>
@@ -138,7 +137,6 @@ function Menu() {
 								</div>
 							</div>
 						}
-					}
 					)}
 				</div>
 			) : (<>
@@ -155,7 +153,7 @@ function Menu() {
 										<p>{item.price} ₹ </p>
 									</div>
 
-									<div class="input-group">
+									<div className="input-group">
 										<select id={item._id} onChange={handleQuantity}>
 											<option value={0}>0</option>
 											<option value={1}>1</option>
@@ -194,7 +192,7 @@ function Menu() {
 										<p>{item.price} ₹ </p>
 									</div>
 
-									<div class="input-group">
+									<div className="input-group">
 										<select id={item._id} onChange={handleQuantity}>
 											<option value={0}>0</option>
 											<option value={1}>1</option>
@@ -233,7 +231,7 @@ function Menu() {
 										<p>{item.price} ₹ </p>
 									</div>
 
-									<div class="input-group">
+									<div className="input-group">
 										<select id={item._id} onChange={handleQuantity}>
 											<option value={0}>0</option>
 											<option value={1}>1</option>
@@ -272,7 +270,7 @@ function Menu() {
 										<p>{item.price} ₹ </p>
 									</div>
 
-									<div class="input-group">
+									<div className="input-group">
 										<select id={item._id} onChange={handleQuantity}>
 											<option value={0}>0</option>
 											<option value={1}>1</option>

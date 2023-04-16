@@ -30,16 +30,12 @@ function Order() {
       <h1> You want !! </h1>
       <div className="Order-main">
         {items.map((item) => {
-          if (true) {
             return <div className='Order-detailBox' key={item.foodId._id} >
               <div className='Order-imgbox'><img src={item.foodId.imageManu} alt="Menu"/></div>
-
               <div className="Item_data1"><p>{item.foodId.name}</p></div>
               <div className="Item_data1"><p>{item.foodId.price} ₹ </p></div>
               <div className="Item_data1"><p>Qut: {item.quantity}</p></div>
-
             </div>
-          }
         }
         )}
         <div className="OrderStatus">
