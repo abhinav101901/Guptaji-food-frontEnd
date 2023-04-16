@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "version": "0.1.0",
-  "homepage": "http://abhinav101901.com/Guptaji-food-frontEnd",
+  "homepage": "http://abhinav101901.github.io/Guptaji-food-frontEnd",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
