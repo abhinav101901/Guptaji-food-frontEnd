@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "version": "0.1.0",
-  "homepage": "http://abhinav101901.com/GuptaJi_food_resto_app",
+  "homepage": "http://abhinav101901.com/Guptaji-food-frontEnd",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
