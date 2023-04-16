@@ -1,13 +1,3 @@
-/* .Restorent{
-    width: 100%;
-    height: 100%;
-}
-.contaner-1 {
-    height: auto;
-    flex: 0 0 30%;
-    margin: 1em 20px;
-    border: 2px blue solid;
- } */
 .Restorent {
     font-family: ui-monospace;
     display: flex;
@@ -127,4 +117,26 @@
 .detail-2 a {
     text-decoration-line: none;
     color: black;
+}
+
+@media screen and (max-width: 768px) {
+.Res-header{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:center; */
+
+}
+.Res-2{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Res-header-1 input{
+    margin: 0 0 0 10px;
+    width: 220px;
+}
 }

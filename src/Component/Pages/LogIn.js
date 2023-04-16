@@ -11,7 +11,7 @@ function LogIn() {
 
   const userLogIn = function (event) {
     event.preventDefault();
-    axios.post('http://localhost:3000/login', {
+    axios.post('https://guptaji-food-backend-production.up.railway.app/login', {
          phone
     })
         .then((res) => {
@@ -37,7 +37,7 @@ function LogIn() {
         </div>
       <form className='LogIn'onSubmit={userLogIn}>
         <input type="phone" id="phone" value={phone} onChange={((e) => setPhone(e.target.value))} placeholder='Phone' />
-        <input className="btn btn-primary" type="submit" placeholder="LOG IN" /><br />
+        <input className="btn-primary" type="submit" placeholder="LOG IN" /><br />
         <Link className='btn21' to="/SingIn">SingIn</Link>
       </form>
       

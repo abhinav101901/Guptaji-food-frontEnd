@@ -30,7 +30,7 @@ function Menu() {
 	const routeParams = useParams()
 
 	useEffect(() => {
-		axios.get(`http://localhost:3000/getFood/${routeParams.id}`)
+		axios.get(`http://guptaji-food-backend-production.up.railway.app/getFood/${routeParams.id}`)
 			.then((res) => {
 				setData(res.data.data)
 				console.log(res.data.data)
@@ -44,7 +44,7 @@ function Menu() {
 	}
 
 	function handleClick(foodId) {
-		axios.post(`http://localhost:3000/addInCart/${UserId}`, {
+		axios.post(`http://guptaji-food-backend-production.up.railway.app/addInCart/${UserId}`, {
 			foodId, quantity
 		})
 			.then((res) => {
@@ -64,7 +64,7 @@ function Menu() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log(name)
-		axios.get(`http://localhost:3000/getfoodByname/${name}`)
+		axios.get(`http://guptaji-food-backend-production.up.railway.app/getfoodByname/${name}`)
 			.then((res) => {
 				setQuery(res.data.data)
 				setSearchData(true)
@@ -87,7 +87,7 @@ function Menu() {
 	return (
 		<div className="Restorent">
 			{added ? (<></>) : (<div id="slider" class="slide-in">add successfully</div>)}
-			<div className='funck'>
+			<div className='foook'>
 				<h1>Food Menu</h1>
 				<div className='fu-2'>
 					<form className='Res-header-1' onSubmit={handleSubmit}>

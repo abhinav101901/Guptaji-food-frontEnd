@@ -17,7 +17,7 @@ function SingIn() {
 
     const userRegistration = function (event) {
         event.preventDefault();
-        axios.post('http://localhost:3000/register', {
+        axios.post('https://guptaji-food-backend-production.up.railway.app/register', {
             name,email,phone,address:{area,streat,landmark,pincode}
         })
             .then((res) => {

@@ -13,7 +13,7 @@ function Order() {
     return saved
   });
   useEffect(() => {
-    axios.get(`http://localhost:3000/getOrder/${UserId}`)
+    axios.get(`https://guptaji-food-backend-production.up.railway.app/getOrder/${UserId}`)
       .then((res) => {
         setItems(res.data.data.items)
         setPrice(res.data.data.totalPrice)

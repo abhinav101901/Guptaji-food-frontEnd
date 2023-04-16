@@ -37,3 +37,34 @@
     display: flex;
     flex-direction: row;
 }
+
+/* For screens with a maximum width of 768px (typical mobile devices) */
+
+@media only screen and (max-width: 768px) {
+    .Nav {
+      height: auto;
+      flex-direction: column;
+    }
+    .menu-btn,
+    .login-btn {
+      margin: 10px 0 0 0;
+      width: 100%;
+      justify-content: center;
+    }
+    .menu-btn {
+      order: 2;
+    }
+    .login-btn {
+      order: 3;
+    }
+    .Nav-logo {
+      margin: 20px auto 0 auto;
+    }
+    .img-logo {
+      margin-left: 0;
+    }
+    .Menu {
+      margin: 0 auto 10px auto;
+    }
+  }
+  

@@ -13,7 +13,7 @@ function Restorent() {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		fetch("http://localhost:3000/getRestorent")
+		fetch("https://guptaji-food-backend-production.up.railway.app/getRestorent")
 			.then((res) => res.json())
 			.then((json) => {
 				setData(json)
@@ -35,7 +35,7 @@ function Restorent() {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		console.log(name)
-		axios.get(`http://localhost:3000/getRestorentByname/${name}`)
+		axios.get(`https://guptaji-food-backend-production.up.railway.app/getRestorentByname/${name}`)
 			.then((res) => {
 				setQuery(res.data.data)
 				setSearchData(true)
